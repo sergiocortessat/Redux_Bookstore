@@ -1,12 +1,18 @@
-## React Calculator App
+## Bookstore
 
 <p align="center">
   <img height="auto" src="customlogo.png">
 </p>
 
+## About The Project
+
+Magic-books Inc. is a fictional company based in Germany. This application helps users organize and manage their bookstore. It is designed to be fast, dynamic and responsive to their actions.
+
+<br />
+
 ## Live Version
 
-* [Live Demo](https://calculator-pwa-scs.herokuapp.com/) 
+* [Live Demo](https://bookstore-scs.herokuapp.com/) 
 
 <br />
 
@@ -26,8 +32,11 @@
 <br />
 
 ![Javascript](https://img.shields.io/badge/Javascript-3776AB?style=for-the-badge&logo=javascript&logoColor=white) <br/>
+![Redux](https://img.shields.io/badge/Redux-092E20?style=for-the-badge&logo=redux&logoColor=white) <br/>
 ![React](https://img.shields.io/badge/React-092E20?style=for-the-badge&logo=react&logoColor=white) <br/>
-![Scss](https://img.shields.io/badge/Sass-092E20?style=for-the-badge&logo=sass&logoColor=white) <br/>
+![Sass](https://img.shields.io/badge/Sass-092E20?style=for-the-badge&logo=sass&logoColor=white) <br/>
+
+
 
 ## Screenshot
 
@@ -37,16 +46,11 @@
 
 ### Built With
 
-* [JAVASCRIPT] [REACT] 
+* [JAVASCRIPT] [REACT] [REDUX]
 
 <br />
 
 
-## About The Project
-
-The React Calculator creates a web application capable of displaying a calculator layout face and its proper functionality to perform all necessary operations a calculator can
-
-<br />
 
 
 ## Contributing
@@ -63,21 +67,21 @@ Terminal or similar to execute the program.
 
 ## Clone project
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/React_Calculator1/``` using your terminal or command line.
-- Change to the project directory by entering: ```cd React_Calculator1``` in the terminal.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/Redux_Bookstore``` using your terminal or command line.
+- Change to the project directory by entering: ```cd Redux_Bookstore``` in the terminal.
 - Enter the command npm i
 - Enter the project folder and run locally by using npm start.
 
 ## Command line steps
 ```
-- $ git clone `$ git clone https://github.com/sergiocortessat/React_Calculator1/
+- $ git clone `$ git clone https://github.com/sergiocortessat/Redux_Bookstore
 - $ git checkout develop
-- $ cd React_Calculator1
+- $ cd Redux_Bookstore
 - $ npm i
 - $ npm start
 ```
 
-## Testing
+<!-- ## Testing
 
 The testing has been performed using Jest Framework. 
 
@@ -90,7 +94,7 @@ The testing has been performed using Jest Framework.
 - $ npm run test
 
 ```
-![Tests](test.png)
+![Tests](test.png) -->
 
 
 ## Authors

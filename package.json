@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bookstore-scs.herokuapp.com/",
   "name": "redux-bookstore",
   "version": "0.1.0",
   "private": true,

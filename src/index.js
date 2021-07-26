@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './CSS/index.scss';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
 // import * as serviceWorkerRegistration from './serviceWorkerRegistration';

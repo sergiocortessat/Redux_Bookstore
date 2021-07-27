@@ -1,9 +1,5 @@
-/* eslint-disable import/no-duplicates */
 /* eslint-disable no-unused-vars */
-import React from 'react';
 import { useState } from 'react';
-// import PropTypes from 'prop-types'
-import { useSelector } from 'react-redux';
 import Select from 'react-select';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];

@@ -12,12 +12,19 @@ const bookReducer = (state = defaultState, action) => {
     case 'CREATE_BOOK':
       return {
         ...state,
-        [action.payload.id]: action.payload,
+        books: [
+          ...state.books,
+          {
+            id: uuidv4(),
+            title: action.payload.title,
+            category: action.payload.category,
+          },
+        ],
       };
     case 'REMOVE_BOOK':
       return {
         ...state,
-        [action.payload.id]: undefined,
+        books: state.books.filter((book) => book.id !== action.payload.id),
       };
     default:
       return state;

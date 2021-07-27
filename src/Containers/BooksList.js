@@ -6,13 +6,13 @@ import { removeBook } from '../actions';
 
 const BooksList = () => {
   const { books } = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+  const handleRemoveBook = (book) => {
+    dispatch(removeBook(book));
+  };
   const bookMapping = books.map((book) => (
     <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
   ));
-  const dispatch = useDispatch();
-  const handleRemove = (book) => {
-    dispatch(removeBook(book));
-  };
 
   return (
     <div>

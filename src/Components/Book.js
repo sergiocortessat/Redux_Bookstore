@@ -2,13 +2,13 @@
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => {
-  const handle = () => handleRemoveBook(book);
+  const handleRemove = () => handleRemoveBook(book);
   return (
     <tr>
       <td>{book.id.substring(0, 2)}</td>
       <td>{book.title}</td>
       <td>{book.category}</td>
-      <td><button type="button" onClick={() => handle}>Remove book </button></td>
+      <td><button type="button" onClick={() => handleRemove()}>Remove book </button></td>
     </tr>
   );
 };

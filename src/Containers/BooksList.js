@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Book from '../Components/Book';
 
 const BooksList = () => {
-  const { books } = useSelector((state) => state.books);
+  const { books } = useSelector((state) => state);
   const bookMapping = books.map((book) => (
     <Book key={book.id} book={book} />
   ));

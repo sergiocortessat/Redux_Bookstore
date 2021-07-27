@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-// import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux';
-// import { bookAction } from '../../Redux/actions/index';
 import Book from '../Components/Book';
 
 const BooksList = () => {
@@ -16,11 +14,14 @@ const BooksList = () => {
       <table>
         <thead>
           <tr>
+            <th>ID</th>
             <th>Title</th>
             <th>Category</th>
           </tr>
         </thead>
-        {bookMapping}
+        <tbody>
+          {bookMapping}
+        </tbody>
       </table>
     </div>
   );

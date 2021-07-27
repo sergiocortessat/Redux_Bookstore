@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import Select from 'react-select';
+import { useDispatch } from 'react-redux';
+import { createBook, removeBook } from '../actions';
 
 const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 const options = bookCategories.map((category) => ({
@@ -8,14 +10,15 @@ const options = bookCategories.map((category) => ({
   label: category,
 }));
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  console.log('e');
-};
 const BooksForm = () => {
   const [title, setTitle] = useState();
   const [selectedCategory, setSelectedCategory] = useState();
+  const dispatch = useDispatch();
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(createBook({ title, category: selectedCategory }));
+  };
   return (
     <form className="form" onSubmit={(e) => handleSubmit(e)}>
       <label htmlFor="title">

@@ -1,5 +1,5 @@
-import BooksList from './Containers/BooksList';
-import BooksForm from './Containers/BooksForm';
+import BooksList from '../Containers/BooksList';
+import BooksForm from '../Containers/BooksForm';
 
 function App() {
   return (

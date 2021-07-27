@@ -1,17 +1,27 @@
-// Create reducers for the state of the books
+import { v4 as uuidv4 } from 'uuid';
+
 const defaultState = {
-  isFetching: 'false',
+  books: [
+    { id: uuidv4(), title: 'The Lord of the Rings', category: 'Fiction' },
+    { id: uuidv4(), title: 'The Return of the King', category: 'Fiction' },
+  ],
 };
-const Books = (state = defaultState, action) => {
+
+const bookReducer = (state = defaultState, action) => {
   switch (action.type) {
-    case 'BOOK_ACTION':
+    case 'CREATE_BOOK':
       return {
         ...state,
-        isFetching: action.payload.prop,
+        [action.payload.id]: action.payload,
+      };
+    case 'REMOVE_BOOK':
+      return {
+        ...state,
+        [action.payload.id]: undefined,
       };
     default:
       return state;
   }
 };
 
-export default Books;
+export default bookReducer;

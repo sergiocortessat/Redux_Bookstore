@@ -1,6 +1,6 @@
-// const initialState = 'ALL';
+const initialState = 'ALL';
 
-const bookFilter = (state = 'ALL', action) => {
+const bookFilter = (state = initialState, action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
       return action.payload;

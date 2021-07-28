@@ -1,6 +1,4 @@
-/* eslint-disable consistent-return */
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../Components/Book';
 import { removeBook } from '../actions';

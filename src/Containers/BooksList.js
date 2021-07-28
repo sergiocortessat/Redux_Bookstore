@@ -3,8 +3,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../Components/Book';
-import { removeBook } from '../actions';
-import Select from '../Components/CategoryFilter';
+import { removeBook, filterBook } from '../actions';
+import CategoryFilter from '../Components/CategoryFilter';
 
 const BooksList = () => {
   const { books } = useSelector((state) => state.books);
@@ -14,10 +14,9 @@ const BooksList = () => {
     dispatch(removeBook(book));
   };
 
-  // const bookMapping = books.map((book) => (
-  //   <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
-  // ));
-
+  const handleOnChange = (e) => {
+    dispatch(filterBook(e.value));
+  };
   const getFilteredBooks = () => {
     if (filter === 'ALL') {
       return books.map((book) => (
@@ -45,7 +44,7 @@ const BooksList = () => {
           {getFilteredBooks()}
         </tbody>
       </table>
-      <Select />
+      <CategoryFilter handleOnChange={handleOnChange} />
     </div>
   );
 };

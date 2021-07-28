@@ -5,7 +5,7 @@ import Book from '../Components/Book';
 import { removeBook } from '../actions';
 
 const BooksList = () => {
-  const { books } = useSelector((state) => state);
+  const { books } = useSelector((state) => state.books);
   const dispatch = useDispatch();
   const handleRemoveBook = (book) => {
     dispatch(removeBook(book));
@@ -13,6 +13,13 @@ const BooksList = () => {
   const bookMapping = books.map((book) => (
     <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
   ));
+
+  const getFilteredBooks = ({ books, filter }) => {
+    if (filter === 'All') {
+      return books;
+    }
+    return books.filter(({ category }) => category === filter);
+  };
 
   return (
     <div>

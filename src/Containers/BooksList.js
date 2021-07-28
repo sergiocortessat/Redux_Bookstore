@@ -5,7 +5,7 @@ import Book from '../Components/Book';
 import { removeBook } from '../actions';
 
 const BooksList = () => {
-  const { books } = useSelector((state) => state.books);
+  const { books } = useSelector((state) => state);
   const dispatch = useDispatch();
   const handleRemoveBook = (book) => {
     dispatch(removeBook(book));

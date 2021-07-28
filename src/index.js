@@ -5,10 +5,11 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
-import AllReducers from './reducers/index';
+import BookReducer from './reducers/books';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+import initialState from './staticData';
 
-const store = createStore(AllReducers);
+const store = createStore(BookReducer, initialState);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

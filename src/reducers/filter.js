@@ -1,10 +1,9 @@
-const bookFilter = (state = {}, action) => {
+// const initialState = 'ALL';
+
+const bookFilter = (state = 'ALL', action) => {
   switch (action.type) {
     case 'CHANGE_FILTER':
-      return {
-        ...state,
-        books: state.books.filter((book) => book.category === action.payload.filter),
-      };
+      return action.payload;
     default:
       return state;
   }

@@ -19,7 +19,12 @@ const NavBar = () => {
   }, [books]);
   return (
     <nav>
-      <CategoryFilter handleOnChange={handleOnChange} options={options} />
+      <ul>
+        <li><h4>BookStore</h4></li>
+        <li>
+          <CategoryFilter handleOnChange={handleOnChange} options={options} />
+        </li>
+      </ul>
     </nav>
   );
 };

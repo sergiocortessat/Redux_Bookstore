@@ -9,9 +9,9 @@ export const createBook = (book) => ({
     id: uuidv4(),
   },
 });
-export const removeBook = (book) => ({
+export const removeBook = ({ id }) => ({
   type: REMOVE_BOOK,
   payload: {
-    id: book.id,
+    id,
   },
 });

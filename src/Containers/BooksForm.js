@@ -18,6 +18,11 @@ const BooksForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(createBook({ title, category: selectedCategory }));
+    e.target.reset();
+  };
+
+  const handleSelect = (e) => {
+    setSelectedCategory(e.value);
   };
   return (
     <form className="form" onSubmit={(e) => handleSubmit(e)}>
@@ -25,7 +30,7 @@ const BooksForm = () => {
         Title:
         <input type="text" className="form-control" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
       </label>
-      <Select options={options} onChange={(e) => setSelectedCategory(e.value)} />
+      <Select options={options} onChange={handleSelect} />
       <input type="submit" value="submit" />
     </form>
   );

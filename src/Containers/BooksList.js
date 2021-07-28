@@ -1,12 +1,17 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from '../Components/Book';
+import { removeBook } from '../actions';
 
 const BooksList = () => {
   const { books } = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const handleRemoveBook = (book) => {
+    dispatch(removeBook(book));
+  };
   const bookMapping = books.map((book) => (
-    <Book key={book.id} book={book} />
+    <Book key={book.id} book={book} handleRemoveBook={handleRemoveBook} />
   ));
 
   return (
@@ -17,6 +22,7 @@ const BooksList = () => {
             <th>ID</th>
             <th>Title</th>
             <th>Category</th>
+            <th>Remove book</th>
           </tr>
         </thead>
         <tbody>

@@ -4,6 +4,7 @@ import { CircularProgress } from '@material-ui/core';
 
 const Book = ({ book, handleRemoveBook }) => {
   const progressBar = Math.floor(Math.random() * 100);
+  const progressPage = Math.floor(Math.random() * 500);
 
   return (
     <div className="book-item">
@@ -33,7 +34,10 @@ const Book = ({ book, handleRemoveBook }) => {
       <span className="horizontal-line-1" />
       <div className="chapters">
         <h5>CURRENT CHAPTER</h5>
-        <h4>Chapter 17</h4>
+        <h4>
+          Chapter
+          {progressPage}
+        </h4>
         <button type="button" disabled="true">UPDATE PROGRESS</button>
       </div>
     </div>

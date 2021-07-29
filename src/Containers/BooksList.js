@@ -24,20 +24,8 @@ const BooksList = () => {
   };
 
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove book</th>
-          </tr>
-        </thead>
-        <tbody>
-          {getFilteredBooks()}
-        </tbody>
-      </table>
+    <div className="book-list">
+      {getFilteredBooks()}
     </div>
   );
 };

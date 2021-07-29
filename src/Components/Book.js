@@ -2,12 +2,25 @@
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => (
-  <tr>
-    <td>{book.id.substring(0, 2)}</td>
-    <td>{book.title}</td>
-    <td>{book.category}</td>
-    <td><button type="button" onClick={() => handleRemoveBook(book)}>Remove book </button></td>
-  </tr>
+  <div className="book-item">
+    {/* <>{book.id.substring(0, 2)}</> */}
+    <div>
+      <h5>{book.category}</h5>
+      <h4>{book.title}</h4>
+      <h5>Author</h5>
+      <div>
+        <button type="button" disabled="true">Comments</button>
+        <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+        <button type="button" disabled="true">Edit</button>
+      </div>
+    </div>
+    <div>
+      more
+    </div>
+    <div>
+      more
+    </div>
+  </div>
 );
 
 // Props

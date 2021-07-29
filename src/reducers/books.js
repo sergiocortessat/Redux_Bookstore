@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
+import { initialState } from '../staticData';
 
-const bookReducer = (state, action) => {
+const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
       return {

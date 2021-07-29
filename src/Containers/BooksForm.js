@@ -3,12 +3,7 @@ import { useState } from 'react';
 import Select from 'react-select';
 import { useDispatch } from 'react-redux';
 import { createBook } from '../actions';
-
-const bookCategories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-const options = bookCategories.map((category) => ({
-  value: category,
-  label: category,
-}));
+import { options } from '../staticData';
 
 const BooksForm = () => {
   const [title, setTitle] = useState();

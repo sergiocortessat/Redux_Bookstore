@@ -27,7 +27,7 @@ const BooksForm = () => {
           <input type="text" className="form-control book-title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
         </label>
         <Select options={options} onChange={handleSelect} className="book-category" />
-        <input type="submit" value="submit" className="submit-button" />
+        <input type="submit" value="Add Book" className="submit-button" />
       </form>
     </div>
   );

@@ -13,7 +13,7 @@ header {
   .header-text {
     display: flex;
     align-items: center;
-    margin-left: 10rem;
+    margin-left: 11rem;
   }
 
   .header-text > * {
@@ -39,8 +39,13 @@ header {
     opacity: 0.5;
   }
 
+  .css-2b097c-container {
+    width: 230px;
+    border-radius: 4px;
+  }
+
   .oval {
-    margin-right: 10rem;
+    margin-right: 11rem;
     padding: 0.875rem;
     border: solid 1px #e8e8e8;
     border-radius: 50%;

@@ -23,8 +23,8 @@ const NavBar = () => {
       <div className="header-text">
         <h1 className="bookstore-cms">BookStore CMS</h1>
         <p className="books">Books</p>
-        {/* <CategoryFilter handleOnChange={handleOnChange} options={options} /> */}
         <p className="categories">Categories</p>
+        <CategoryFilter handleOnChange={handleOnChange} options={options} />
       </div>
       <i className="oval">
         <IoIosPerson />

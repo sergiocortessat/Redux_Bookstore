@@ -15,7 +15,8 @@ const NavBar = () => {
 
   useEffect(() => {
     const categories = ['All', ...books.map((book) => book.category)];
-    setOptions(categories.map((category) => ({ value: category, label: category })));
+    const uniqueCategories = [...new Set(categories)];
+    setOptions(uniqueCategories.map((category) => ({ value: category, label: category })));
   }, [books]);
   return (
     <header>

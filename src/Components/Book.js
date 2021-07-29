@@ -7,7 +7,6 @@ const Book = ({ book, handleRemoveBook }) => {
 
   return (
     <div className="book-item">
-      {/* <>{book.id.substring(0, 2)}</> */}
       <div className="book-info">
         <h4>{book.category}</h4>
         <h3>{book.title}</h3>

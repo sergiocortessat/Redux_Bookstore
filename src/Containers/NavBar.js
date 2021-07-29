@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { IoIosPerson } from 'react-icons/io';
@@ -22,8 +21,8 @@ const NavBar = () => {
     <header>
       <div className="header-text">
         <h1 className="bookstore-cms">BookStore CMS</h1>
-        <p className="books">Books</p>
-        <p className="categories">Categories</p>
+        <p className="books">BOOKS</p>
+        <p className="categories">CATEGORIES</p>
         <CategoryFilter handleOnChange={handleOnChange} options={options} />
       </div>
       <i className="oval">

@@ -1,6 +1,15 @@
 $azure: #0290ff;
 $black-two: #121212;
 
+.vertical-line-1 {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 55px auto;
+  height: 0.125rem;
+  border: solid 1px #e8e8e8;
+  text-align: center;
+}
+
 .form-container {
   margin: 0 auto;
   width: 80%;

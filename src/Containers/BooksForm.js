@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import Select from 'react-select';
 import { useDispatch } from 'react-redux';

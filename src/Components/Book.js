@@ -36,6 +36,7 @@ const Book = ({ book, handleRemoveBook }) => {
         <h5>CURRENT CHAPTER</h5>
         <h4>
           Chapter
+          {' '}
           {progressPage}
         </h4>
         <button type="button" disabled="true">UPDATE PROGRESS</button>

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
 import { CircularProgress } from '@material-ui/core';
 
@@ -52,7 +51,7 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
-
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
 export default Book;

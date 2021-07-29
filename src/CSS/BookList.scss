@@ -1,10 +1,7 @@
 .book-list {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
+  width: 80%;
+  margin: 50px auto;
   font-family: Montserrat, sans-serif;
-  position: relative;
-  align-items: center;
 }
 
 .book-item {
@@ -15,7 +12,7 @@
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: white;
-  width: 75rem;
+  width: 100%;
   margin: 0 0.063rem 0.938rem 0;
   padding: 2rem 7.438rem 1.625rem 1.688rem;
 }

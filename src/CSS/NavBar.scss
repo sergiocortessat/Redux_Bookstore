@@ -7,15 +7,13 @@ header {
   font-family: Montserrat, sans-serif;
   height: 5.938rem;
   align-items: center;
-  position: relative;
-  width: 75rem;
+  justify-content: space-between;
   margin: 0 auto;
 
   .header-text {
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 0;
+    margin-left: 10rem;
   }
 
   .header-text > * {
@@ -42,13 +40,13 @@ header {
   }
 
   .oval {
-    height: 2.813rem;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 0;
+    margin-right: 10rem;
+    padding: 0.875rem;
+    border: solid 1px #e8e8e8;
+    border-radius: 50%;
 
     svg {
+      width: 1.063rem;
       height: 1.063rem;
       color: $azure;
     }

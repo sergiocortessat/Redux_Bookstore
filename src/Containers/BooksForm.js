@@ -24,11 +24,10 @@ const BooksForm = () => {
       <h2>ADD NEW BOOK</h2>
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         <label htmlFor="title">
-          Title:
-          <input type="text" className="form-control" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
+          <input type="text" className="form-control book-title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
         </label>
-        <Select options={options} onChange={handleSelect} />
-        <input type="submit" value="submit" />
+        <Select options={options} onChange={handleSelect} className="book-category" />
+        <input type="submit" value="submit" className="submit-button" />
       </form>
     </div>
   );

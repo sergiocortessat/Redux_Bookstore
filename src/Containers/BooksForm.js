@@ -20,16 +20,19 @@ const BooksForm = () => {
     setSelectedCategory(e.value);
   };
   return (
-    <div className="form-container">
-      <h2>ADD NEW BOOK</h2>
-      <form className="form" onSubmit={(e) => handleSubmit(e)}>
-        <label htmlFor="title">
-          <input type="text" className="form-control book-title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
-        </label>
-        <Select options={options} onChange={handleSelect} className="book-category" />
-        <input type="submit" value="Add Book" className="submit-button" />
-      </form>
-    </div>
+    <>
+      <span className="vertical-line-1" />
+      <div className="form-container">
+        <h2>ADD NEW BOOK</h2>
+        <form className="form" onSubmit={(e) => handleSubmit(e)}>
+          <label htmlFor="title">
+            <input type="text" className="form-control book-title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
+          </label>
+          <Select options={options} onChange={handleSelect} className="book-category" />
+          <input type="submit" value="Add Book" className="submit-button" />
+        </form>
+      </div>
+    </>
   );
 };
 

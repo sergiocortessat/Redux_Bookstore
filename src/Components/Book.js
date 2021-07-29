@@ -14,7 +14,9 @@ const Book = ({ book, handleRemoveBook }) => {
         <h5>Author</h5>
         <div className="buttons">
           <button className="comments" type="button" disabled="true">Comments</button>
+          <span className="horizontal-line-2" />
           <button className="remove" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          <span className="horizontal-line-2" />
           <button className="edit" type="button" disabled="true">Edit</button>
         </div>
       </div>
@@ -28,9 +30,10 @@ const Book = ({ book, handleRemoveBook }) => {
           <p className="completed">Completed</p>
         </div>
       </div>
+      <span className="horizontal-line-1" />
       <div className="chapters">
         <h5>CURRENT CHAPTER</h5>
-        <h4>Chapter17</h4>
+        <h4>Chapter 17</h4>
         <button type="button" disabled="true">UPDATE PROGRESS</button>
       </div>
     </div>

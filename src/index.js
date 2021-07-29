@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './CSS/index.scss';
 import './CSS/BookList.scss';
+import './CSS/NavBar.scss';
+import './CSS/BookForm.scss';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './Components/App';

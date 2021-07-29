@@ -16,6 +16,102 @@ $black-two: #121212;
   position: relative;
 }
 
+.progress {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  position: absolute;
+  right: 310px;
+
+  .MuiCircularProgress-svg {
+    width: 5.625rem;
+    height: 5.62rem;
+    padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+  }
+
+  .MuiCircularProgress-root {
+    width: 100% !important;
+  }
+
+  .progress-text {
+    margin-left: 50px;
+  }
+
+  .percentage {
+    width: 4.25rem;
+    height: 2.438rem;
+    margin: 0.063rem 5.75rem 0 0.688rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $black-two;
+  }
+
+  .completed {
+    width: 5rem;
+    height: 1.125rem;
+    margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+    opacity: 0.5;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $black-two;
+  }
+}
+
+.horizontal-line-1 {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 1.125rem 3.688rem 1.5rem 4.938rem;
+  border: solid 1px #e8e8e8;
+  position: absolute;
+  right: 310px;
+}
+
+.chapters {
+  h5 {
+    height: 1.125rem;
+    margin: 0.063rem 3.625rem 0 3.688rem;
+    opacity: 0.5;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
+  }
+
+  h4 {
+    height: 1.313rem;
+    margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: var(--black-two);
+  }
+
+  button {
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+    margin: 0.75rem 0 0.563rem 3.688rem;
+    border-radius: 3px;
+    background-color: $azure;
+    color: white;
+    font-family: RobotoSlab, sans-serif;
+  }
+}
+
 .book-info {
   display: flex;
   flex-direction: column;
@@ -120,101 +216,5 @@ $black-two: #121212;
       margin: 0.75rem 1.063rem 0 0.938rem;
       border: solid 1px #e8e8e8;
     }
-  }
-}
-
-.progress {
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-  position: absolute;
-  right: 310px;
-
-  .MuiCircularProgress-svg {
-    width: 5.625rem;
-    height: 5.62rem;
-    padding: 0.62rem 0.625rem 0.75rem 0.75rem;
-  }
-
-  .MuiCircularProgress-root {
-    width: 100% !important;
-  }
-
-  .progress-text {
-    margin-left: 50px;
-  }
-
-  .percentage {
-    width: 4.25rem;
-    height: 2.438rem;
-    margin: 0.063rem 5.75rem 0 0.688rem;
-    font-family: Montserrat, sans-serif;
-    font-size: 2rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $black-two;
-  }
-
-  .completed {
-    width: 5rem;
-    height: 1.125rem;
-    margin: 0.438rem 4.938rem 0.75rem 0.75rem;
-    opacity: 0.5;
-    font-family: Montserrat, sans-serif;
-    font-size: 0.875rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $black-two;
-  }
-}
-
-.horizontal-line-1 {
-  width: 0.125rem;
-  height: 4.375rem;
-  margin: 1.125rem 3.688rem 1.5rem 4.938rem;
-  border: solid 1px #e8e8e8;
-  position: absolute;
-  right: 310px;
-}
-
-.chapters {
-  h5 {
-    height: 1.125rem;
-    margin: 0.063rem 3.625rem 0 3.688rem;
-    opacity: 0.5;
-    font-size: 0.813rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
-  }
-
-  h4 {
-    height: 1.313rem;
-    margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-    font-size: 1rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    color: var(--black-two);
-  }
-
-  button {
-    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-    margin: 0.75rem 0 0.563rem 3.688rem;
-    border-radius: 3px;
-    background-color: $azure;
-    color: white;
-    font-family: RobotoSlab, sans-serif;
   }
 }

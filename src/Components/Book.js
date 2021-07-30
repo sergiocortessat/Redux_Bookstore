@@ -10,7 +10,10 @@ const Book = ({ book, handleRemoveBook }) => {
       <div className="book-info">
         <h4>{book.category}</h4>
         <h3>{book.title}</h3>
-        <h5>Author</h5>
+        <h5>
+          ID:
+          {book.id.slice(0, 8)}
+        </h5>
         <div className="buttons">
           <button className="comments" type="button" disabled="true">Comments</button>
           <span className="horizontal-line-2" />

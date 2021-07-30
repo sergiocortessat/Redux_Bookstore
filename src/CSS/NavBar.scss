@@ -1,9 +1,10 @@
 $azure: #0290ff;
 $black-two: #121212;
+$display-flex: flex;
 
 header {
   background-color: white;
-  display: flex;
+  display: $display-flex;
   font-family: Montserrat, sans-serif;
   height: 5.938rem;
   align-items: center;
@@ -11,7 +12,7 @@ header {
   margin: 0 auto;
 
   .header-text {
-    display: flex;
+    display: $display-flex;
     align-items: center;
     margin-left: 11rem;
   }
@@ -46,9 +47,10 @@ header {
 
   .oval {
     margin-right: 11rem;
-    padding: 0.875rem;
+    padding: 0.275rem;
     border: solid 1px #e8e8e8;
     border-radius: 50%;
+    margin-bottom: 2px;
 
     svg {
       width: 1.063rem;

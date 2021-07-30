@@ -1,5 +1,6 @@
 $azure: #0290ff;
 $black-two: #121212;
+$border-4: 4px;
 
 .vertical-line-1 {
   display: block;
@@ -26,7 +27,7 @@ $black-two: #121212;
     width: 41.5rem;
     height: 2.813rem;
     margin: 1.188rem 2.125rem 0 0;
-    border-radius: 4px;
+    border-radius: $border-4;
     border: solid 1px #e8e8e8;
     background-color: white;
     padding-left: 10px;
@@ -34,12 +35,12 @@ $black-two: #121212;
 
   .book-category {
     width: 41.5rem;
-    border-radius: 4px;
+    border-radius: $border-4;
   }
 
   .css-yk16xz-control {
     height: 2.813rem !important;
-    border-radius: 4px;
+    border-radius: $border-4;
   }
 
   .submit-button {

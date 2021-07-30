@@ -1,8 +1,16 @@
 $azure: #0290ff;
+$blue: #4386bf;
 $black-two: #121212;
+$flex: flex;
+$normal: normal;
+$montserrat: montserrat, sans-serif;
+$robotoslab: robotoslab, sans-serif;
+$alignitems: center;
+$medium-blue: #307bbe;
+$dodger-blue: #379cf6;
 
 .book-item {
-  display: flex;
+  display: $flex;
   flex-direction: row;
   justify-content: space-between;
   height: 10.625rem;
@@ -12,13 +20,13 @@ $black-two: #121212;
   width: 100%;
   margin: 0 0.063rem 0.938rem 0;
   padding: 2rem 7.438rem 1.625rem 1.688rem;
-  align-items: center;
+  align-items: $alignitems;
   position: relative;
 }
 
 .progress {
-  display: flex;
-  align-items: center;
+  display: $flex;
+  align-items: $alignitems;
   margin: 0 10px;
   position: absolute;
   right: 310px;
@@ -27,6 +35,7 @@ $black-two: #121212;
     width: 5.625rem;
     height: 5.62rem;
     padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+    color: $dodger-blue;
   }
 
   .MuiCircularProgress-root {
@@ -41,13 +50,13 @@ $black-two: #121212;
     width: 4.25rem;
     height: 2.438rem;
     margin: 0.063rem 5.75rem 0 0.688rem;
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat;
     font-size: 2rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    font-weight: $normal;
+    font-stretch: $normal;
+    font-style: $normal;
+    line-height: $normal;
+    letter-spacing: $normal;
     color: $black-two;
   }
 
@@ -56,7 +65,7 @@ $black-two: #121212;
     height: 1.125rem;
     margin: 0.438rem 4.938rem 0.75rem 0.75rem;
     opacity: 0.5;
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat;
     font-size: 0.875rem;
     font-weight: normal;
     font-stretch: normal;
@@ -87,7 +96,7 @@ $black-two: #121212;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--black-two);
+    color: $black-two;
   }
 
   h4 {
@@ -99,28 +108,27 @@ $black-two: #121212;
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.4px;
-    color: var(--black-two);
+    color: $black-two;
   }
 
   button {
     padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-    margin: 0.75rem 0 0.563rem 3.688rem;
+    margin: 0.95rem 0 0.563rem 3.688rem;
     border-radius: 3px;
     background-color: $azure;
     color: white;
-    font-family: RobotoSlab, sans-serif;
+    font-family: $robotoslab;
   }
 }
 
 .book-info {
-  display: flex;
+  display: $flex;
   flex-direction: column;
   align-self: center;
 
   h3 {
     height: 1.813rem;
-    margin: 0.188rem 20.188rem 0 0;
-    font-family: RobotoSlab, sans-serif;
+    font-family: $robotoslab;
     font-size: 1.375rem;
     font-weight: bold;
     font-stretch: normal;
@@ -134,7 +142,7 @@ $black-two: #121212;
     height: 1.125rem;
     margin: 0 2.438rem 0 0;
     opacity: 0.5;
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat;
     font-size: 0.875rem;
     font-weight: bold;
     font-stretch: normal;
@@ -148,14 +156,14 @@ $black-two: #121212;
     width: 6.688rem;
     height: 1.188rem;
     margin: 0.25rem 0 0;
-    font-family: Montserrat, sans-serif;
+    font-family: $montserrat;
     font-size: 0.875rem;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.1rem;
-    color: #4386bf;
+    color: $azure;
   }
 
   .buttons {
@@ -170,28 +178,28 @@ $black-two: #121212;
     .comments {
       height: 1.188rem;
       margin: 0.188rem 0.1rem 0.125rem 0;
-      font-family: RobotoSlab, sans-serif;
+      font-family: $robotoslab;
       font-size: 0.875rem;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: #4386bf;
+      color: $blue;
     }
 
     .remove {
       width: 3.375rem;
       height: 1.188rem;
       margin: 0.188rem 0.1rem 0.125rem 0.875rem;
-      font-family: RobotoSlab, sans-serif;
+      font-family: $robotoslab;
       font-size: 0.875rem;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: #4386bf;
+      color: $blue;
       cursor: pointer;
     }
 
@@ -199,14 +207,14 @@ $black-two: #121212;
       width: 1.688rem;
       height: 1.188rem;
       margin: 0.188rem 0.1rem 0.125rem 1.063rem;
-      font-family: RobotoSlab, sans-serif;
+      font-family: $robotoslab;
       font-size: 0.875rem;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: normal;
       letter-spacing: normal;
-      color: #4386bf;
+      color: $blue;
     }
 
     .horizontal-line-2 {

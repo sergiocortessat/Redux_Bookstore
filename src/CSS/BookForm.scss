@@ -1,0 +1,55 @@
+$azure: #0290ff;
+$black-two: #121212;
+$border-4: 4px;
+
+.vertical-line-1 {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 55px auto;
+  height: 0.125rem;
+  border: solid 1px #e8e8e8;
+  text-align: center;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 40vh;
+  font-family: Montserrat, sans-serif;
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+  }
+
+  .book-title {
+    width: 41.5rem;
+    height: 2.813rem;
+    margin: 1.188rem 2.125rem 0 0;
+    border-radius: $border-4;
+    border: solid 1px #e8e8e8;
+    background-color: white;
+    padding-left: 10px;
+  }
+
+  .book-category {
+    width: 41.5rem;
+    border-radius: $border-4;
+  }
+
+  .css-yk16xz-control {
+    height: 2.813rem !important;
+    border-radius: $border-4;
+  }
+
+  .submit-button {
+    width: 11.5rem;
+    height: 2.813rem;
+    margin: 1.188rem 0 0 2.125rem;
+    padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+    border-radius: 3px;
+    background-color: $azure;
+    color: white;
+  }
+}

@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
 import Select from 'react-select';
 import { useDispatch } from 'react-redux';
@@ -20,14 +19,19 @@ const BooksForm = () => {
     setSelectedCategory(e.value);
   };
   return (
-    <form className="form" onSubmit={(e) => handleSubmit(e)}>
-      <label htmlFor="title">
-        Title:
-        <input type="text" className="form-control" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
-      </label>
-      <Select options={options} onChange={handleSelect} />
-      <input type="submit" value="submit" />
-    </form>
+    <>
+      <span className="vertical-line-1" />
+      <div className="form-container">
+        <h2>ADD NEW BOOK</h2>
+        <form className="form" onSubmit={(e) => handleSubmit(e)}>
+          <label htmlFor="title">
+            <input type="text" className="form-control book-title" placeholder="Title" name="title" onChange={(e) => setTitle(e.target.value)} />
+          </label>
+          <Select options={options} onChange={handleSelect} className="book-category" />
+          <input type="submit" value="Add Book" className="submit-button" />
+        </form>
+      </div>
+    </>
   );
 };
 
